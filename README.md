@@ -19,3 +19,30 @@ my (OVelychko) bashrc config file for the Ubuntu OS
         rm -rf /home/ovelychko/.config/JetBrains/IntelliJIdea2020.3/eval/*
         rm -rf .java/.userPrefs
     }
+
+## Change Apache-Tomcat version from shell 
+
+    function set-tomcat-8 {
+        $CATALINA_BASE/bin/shutdown.sh &>/dev/null
+        export CATALINA_BASE=~/Apache-Tomcat/apache-tomcat-8.5.71
+        export CATALINA_HOME=$CATALINA_BASE
+        export CATALINA_TMPDIR=$CATALINA_BASE/temp
+        echo 'CATALINA_BASE = ' $CATALINA_BASE
+    }
+
+    function set-tomcat-9 {
+        $CATALINA_BASE/bin/shutdown.sh &>/dev/null
+        export CATALINA_BASE=~/Apache-Tomcat/apache-tomcat-9.0.53
+        export CATALINA_HOME=$CATALINA_BASE
+        export CATALINA_TMPDIR=$CATALINA_BASE/temp
+        echo 'CATALINA_BASE = ' $CATALINA_BASE
+    }
+
+    function set-tomcat-10 {
+        $CATALINA_BASE/bin/shutdown.sh &>/dev/null
+        export CATALINA_BASE=~/Apache-Tomcat/apache-tomcat-10.0.11
+        export CATALINA_HOME=$CATALINA_BASE
+        export CATALINA_TMPDIR=$CATALINA_BASE/temp
+        echo 'CATALINA_BASE = ' $CATALINA_BASE
+    }
+    
