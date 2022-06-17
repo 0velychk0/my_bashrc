@@ -1,6 +1,10 @@
 # my_bashrc
 my (OVelychko) bashrc config file for the Ubuntu OS
 
+## set bash prompt color
+    autoload -U colors && colors
+    export PS1="%F{214}%m:%F{lightgreen}%~ "
+
 ## select java-11 as current
     function set-java-11 {
         sudo update-alternatives --set java /usr/lib/jvm/java-11-openjdk-amd64/bin/java
