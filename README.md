@@ -9,7 +9,10 @@ my (OVelychko) bashrc config file for the Ubuntu OS
     sudo rm -rf /Library/Java/*
     sudo rm -rf /Library/PreferencePanes/Java*
     sudo rm -rf /Library/Internet\ Plug-Ins/Java*
-    
+
+## macos list of java versions
+    /usr/libexec/java_home -v
+
 ## select java-11 as current
     function set-java-11 {
         sudo update-alternatives --set java /usr/lib/jvm/java-11-openjdk-amd64/bin/java
