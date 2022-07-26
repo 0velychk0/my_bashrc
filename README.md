@@ -3,7 +3,8 @@ my (OVelychko) bashrc config file for the Ubuntu OS
 
 ## set bash prompt color
     autoload -U colors && colors
-    export PS1="%F{214}%m:%F{lightgreen}%~ $"
+    export PS1="%F{214}%m:%F{lightgreen}%~ $ "
+    export RPROMPT='%F{yellow}%T'
 
 ## macos remove java 
     sudo rm -rf /Library/Java/*
