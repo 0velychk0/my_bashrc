@@ -61,24 +61,30 @@ my (OVelychko) bashrc config file for the Ubuntu OS
     
 ## Github commands
 
-    
 Create new branch
+    
     $ git branch ovelychko-ME-5469
 
 Get list of branches
+
     $ git branch -a  
 
 Switch to a nanother branch 
+
     $ git checkout ovelychko-ME-5469 
 
 Stage file for uploading
+
     $ git add <file>
 
 Set name to a change
+
     $ git commit -m "ME-5469 - Fix Spring4Shell ZERO-day exploit CVE-2022-22950 vulnerability" 
 
 Get status
+
     $ git status 
 
 Upload changed files to server
+
     $ git push origin ovelychko-ME-5469
