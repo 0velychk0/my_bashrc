@@ -11,7 +11,7 @@ my (OVelychko) bashrc config file for the Ubuntu OS
     sudo rm -rf /Library/Internet\ Plug-Ins/Java*
 
 ## macos list of java versions
-    /usr/libexec/java_home -v
+    /usr/libexec/java_home -V
 
 ## select java-11 as current
     function set-java-11 {
