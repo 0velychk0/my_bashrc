@@ -89,3 +89,8 @@ Get status
 Upload changed files to server
 
     $ git push origin ovelychko-ME-5469
+    
+Update App.java file from master
+    
+    $ git checkout master App.java
+
