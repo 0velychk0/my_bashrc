@@ -92,5 +92,6 @@ Upload changed files to server
     
 Update App.java file from master
     
-    $ git checkout master App.java
+    $ git checkout master path-to-file
+    $ git restore -s origin/master path-to-file
 
