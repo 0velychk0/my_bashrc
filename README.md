@@ -90,8 +90,11 @@ Upload changed files to server
 
     $ git push origin ovelychko-ME-5469
     
-Update App.java file from master
+Update file App.java file from master
     
     $ git checkout master path-to-file
     $ git restore -s origin/master path-to-file
 
+Remove branch locally
+
+    $ git branch -d local_branch
