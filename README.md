@@ -97,4 +97,4 @@ Update file App.java file from master
 
 Remove branch locally
 
-    $ git branch -d local_branch
+    $ git branch -D local_branch
