@@ -98,3 +98,10 @@ Update file App.java file from master
 Remove branch locally
 
     $ git branch -D local_branch
+
+## Run codenarc analysis for Groovy project
+
+    $ git clone https://gitlab.suntechinnovation.com/clover/clover-ui.git
+    $ cd clover
+    $ docker run --rm -v `pwd`:/ws --user `id -u`:`id -g` codenarc/codenarc:3.3.0-groovy-4.0 -rulesetfiles=file:config/codenarc/rules.groovy
+    $ cat CodeNarcReport.html
