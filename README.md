@@ -105,3 +105,26 @@ Remove branch locally
     $ cd clover
     $ docker run --rm -v `pwd`:/ws --user `id -u`:`id -g` codenarc/codenarc:3.3.0-groovy-4.0 -rulesetfiles=file:config/codenarc/rules.groovy
     $ cat CodeNarcReport.html
+
+
+
+
+## Pythone help
+
+### перейдіть до каталогу вашого проекту
+    $ mkdir my_project && cd my_project
+
+### Тепер створіть віртуальне середовище за допомогою python3 -m venv:
+    $ python3 -m venv venv
+
+### Після того як віртуальне середовище створено, вам потрібно його активувати:
+    $ source venv/bin/activate
+
+### Якщо ви хочете зберегти список всіх встановлених бібліотек у вашому середовищі ви можете створити файл requirements.txt:
+    $ pip freeze > requirements.txt
+
+### якщо ви хочете встановити ті самі бібліотеки на іншому комп'ютері або в іншому середовищі, просто використовуйте:
+    $ pip install -r requirements.txt
+
+### Після завершення роботи у віртуальному середовищі ви можете деактивувати його, використовуючи команду:
+    $ deactivate
